@@ -17,7 +17,7 @@ public class TestBase {
     static void beforeAll() {
         Configuration.remote = System.getProperty("remoteBrowser");
         Configuration.browserSize = System.getProperty("browserSize");
-        Configuration.baseUrl = System.getProperty("base_url");
+        Configuration.baseUrl = System.getProperty("baseUrl");
         String[] browser = System.getProperty("browser").split(":");
         Configuration.browser = browser[0];
         Configuration.browserVersion = browser[1];
