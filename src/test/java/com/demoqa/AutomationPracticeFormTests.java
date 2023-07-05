@@ -1,5 +1,8 @@
 package com.demoqa;
 
+import io.qameta.allure.Owner;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
@@ -24,7 +27,11 @@ public class AutomationPracticeFormTests extends TestBase {
     private static final String CITY = "Gurgaon";
     private static final String UPLAODEDFILE = "Screenshot 2022-11-17 at 16.11.13.png";
 
+    @Tag("Test")
     @Test
+    @DisplayName("User registration")
+    @Owner("Viushkova")
+
     public void testAnnotatedStep() {
         WebSteps steps = new WebSteps();
 
